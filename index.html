@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    
+    <label>
+        <input type="checkbox" id="uppercase" checked>
+        Incluir letra maiúscula
+    </label>
+
+    <label>
+        <input type="checkbox" id="lowercase" checked>
+        Incluir letra minúscula
+    </label>
+
+    <label>
+        <input type="checkbox" id="numbers" checked>
+        Incluir números
+    </label>
+
+    <label>
+        <input type="checkbox" id="symbols" checked>
+        Incluir símbolos
+    </label>
+
+    <label>
+        Escolher o tamanho da senha:
+        <input type="number" id="length" value="16" min="4" max="32">
+    </label>
+
+    <button id="generate" onclick="passwordgenerator()">Gerar senha</button>
+
+    <p>
+        <strong>
+            Senha gerada: 
+        </strong>
+        <span id="passwordOutput">
+        </span>
+    </p>
+
+    <script src="pwgenerator.js"></script>
+</body>
+</html>
