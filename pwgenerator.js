@@ -5,6 +5,11 @@ function passwordgenerator() {
     const symbols = document.getElementById('symbols').checked;
     const length = parseInt(document.getElementById('length').value);
 
+    if (length < 4 || length > 36) {
+        alert('Por favor, insira um número entre 4 e 36.');
+        return;
+    }
+
     const upperChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowerChars = 'abcdefghijklmnopqrstuvwxyz';
     const numberChars = '0123456789';
