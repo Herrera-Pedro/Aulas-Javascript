@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Exemplo de produto</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produto">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu" onclick="toggleMenu()"></div>
+    </header>
+
+    <section id="sobre">
+        <h1>Seção Sobre</h1>
+        <p>Exemplo de descrição da Seção Sobre</p>
+    </section>
+
+    <section id="produtos">
+        <h2>Exemplo de Produto</h2>
+        <p>Exemplo de descrição da Seção Produtos</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+            <p id="feedback"></p>
+        </form>
+    </section>
+
+</body>
+</html>
