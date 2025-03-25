@@ -1,0 +1,29 @@
+{
+  "name": "aulas-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herrera-Pedro/Aulas-Javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Herrera-Pedro/Aulas-Javascript/issues"
+  },
+  "homepage": "https://github.com/Herrera-Pedro/Aulas-Javascript#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "mysql2": "^3.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
