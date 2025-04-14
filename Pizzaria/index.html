@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Pizarria HTML</h1>
+    </header>
+    <h2>Menu de pizzas</h2>
+    <section id="menu">
+        <div class="pizza">
+            <h3>Pizza de Calabresa</h3>
+            <button onclick="addToCart('Pizza de Calabresa', 23.90)">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="pizza2">
+            <h3>Pizza de Peperoni</h3>
+            <button onclick="addToCart('Pizza de Peperoni', 22.90)">Adicionar ao carrinho</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Carrinho</h2>
+        <ul id="cartItems"></ul>
+    </section>
+
+    <section id="total">
+        <p id="totalPrice">Total: R$ 0,00</p>
+        <button onclick="checkout()">Finalizar Pedido</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
