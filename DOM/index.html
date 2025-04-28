@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Objetos</title>
+</head>
+<body>
+    <button id="btn">Clique aqui!</button>
+
+    <script>
+        // Seleciona o botão pelo ID
+        const btn = document.getElementById('btn');
+
+        // Adiciona um evento de clique ao botão
+        btn.addEventListener('click', function() {
+            // Cria um novo elemento <p>
+            const newElement = document.createElement('p');
+            // Define o conteúdo do novo elemento
+            newElement.textContent = 'Você clicou no botão!';
+            // Adiciona o novo elemento ao corpo do documento
+            document.body.appendChild(newElement);
+        });
+    </script>
+</body>
+</html>
